@@ -26,8 +26,9 @@ grails.project.dependency.resolution = {
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     legacyResolve true
     repositories {
-        grailsCentral()
+        mavenRepo "file://${System.getProperty('user.home')}/m2local/etriksv3"
         mavenLocal()
+        grailsCentral()
         mavenCentral()
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
